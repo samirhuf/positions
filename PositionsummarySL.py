@@ -9,6 +9,7 @@ Created on Thu Sep 24 06:12:53 2020
 import streamlit as st
 import numpy as np
 import pandas as pd
+import datetime
 
 
 st.title('Position Size BankNifty')
@@ -86,5 +87,7 @@ st.write('Total M2M for day: '+str(total_m2m))
 st.write('Total Margin Available: '+str(total_margin_available))
 st.write('Actual BN Futures: '+str(total_bn_futures))
 st.write('Actual MC Futures: '+str(total_mc_futures))
+current_time = datetime.datetime.now()
+st.write('Current Time: ', current_time)
 # st.write('Theoretical BN Position(Total): '+str(total_position))
 # st.write('Theoretical MC Position(Total): '+str(total_position_mc))
