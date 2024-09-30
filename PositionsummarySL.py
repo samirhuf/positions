@@ -24,6 +24,8 @@ df_position_mc=pd.read_csv(file_string_2)
 file_string_3=path_string_1+'positionsummary.csv'
 #print(df_position_mc.head())
 file_string_4=path_string_1+'strategy.csv'
+file_string_5=path_string_1+'current_time.csv'
+df_current_time=pd.read_csv(file_string_5)
 df_strategy=pd.read_csv(file_string_4)
 df_position=pd.merge(df_position,df_strategy,on='Strategy')
 df_position_mc=pd.merge(df_position_mc,df_strategy,on='Strategy')
@@ -87,7 +89,7 @@ st.write('Total M2M for day: '+str(total_m2m))
 st.write('Total Margin Available: '+str(total_margin_available))
 st.write('Actual BN Futures: '+str(total_bn_futures))
 st.write('Actual MC Futures: '+str(total_mc_futures))
-current_time = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=5, minutes=30)))
-st.write('Current Time: ', current_time)
+st.write('Time Updated Till: '+str(df_current_time['Time'].iloc[0]))
+
 # st.write('Theoretical BN Position(Total): '+str(total_position))
 # st.write('Theoretical MC Position(Total): '+str(total_position_mc))
