@@ -11,7 +11,7 @@ import numpy as np
 import pandas as pd
 import datetime
 
-
+st. cache_data. clear()
 st.title('Position Size BankNifty')
 #st.write("Here's my first attempt at writing some text")
 
