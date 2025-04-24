@@ -1,5 +1,5 @@
 Strategy,Position,Trade Price,Trade Time,Eval Time,Status
-N15SMA3H,90,,,,
+N15SMA3H,-90,55320.0,2025-04-24 09:52:00.833884,2025-04-24 09:52:00.833884,-1
 N30EMA1H,90,,,,
 N30SMA3H,90,,,,
 N30EMA2H,90,,,,
