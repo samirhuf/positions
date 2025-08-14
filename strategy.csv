@@ -54,7 +54,7 @@ ID,Strategy
 52,Short Option Strangle
 53,Put Ratio Spreads
 54,Short Call Butterfly
-55,Long Term Bet
+55,LongTermBet
 56,Equity 8110
 57,Equity 7145
 58,Equity MR
@@ -156,7 +156,7 @@ ID,Strategy
 154,DST3
 155,O5MA1
 156,O5EMA1
-157,OTM Index Options
+157,OTMIndexOptions
 158,O15MA1
 159,O15EMA1
 160,O5ST1
